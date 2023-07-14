@@ -1,0 +1,376 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Press Start 2P";
+  src: url("./fonts/PressStart2P-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Aeroport";
+  src: url("./fonts/Aeroport.ttf");
+}
+
+.mainContainer {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(145deg, #909090, rgba(226, 255, 214, 1));
+  justify-content: center;
+  overflow: auto;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-family: "Press Start 2P";
+  margin-top: 83px;
+  font-size: 58px;
+}
+
+.afterTitle {
+  margin-top: 40px;
+  font-family: "Aeroport";
+  text-align: center;
+  font-size: 26px;
+}
+
+.presentBox {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 231.5px) 204px repeat(2, 1fr);
+  grid-template-rows: repeat(2, 204px) repeat(3, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+.fatherOne {
+  grid-area: 1 / 1 / 2 / 3;
+  display: grid;
+  grid-template-columns: repeat(2, 20px) 393px repeat(2, 20px);
+  grid-template-rows: repeat(2, 20px) 124px repeat(2, 20px);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.fatherTwo {
+  grid-area: 2 / 1 / 3 / 3;
+  display: grid;
+  grid-template-columns: repeat(2, 20px) 393px repeat(2, 20px);
+  grid-template-rows: repeat(2, 20px) 124px repeat(2, 20px);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.fatherThree {
+  grid-area: 1 / 3 / 3 / 4;
+  display: grid;
+  grid-template-columns: repeat(2, 20px) 124px repeat(2, 20px);
+  grid-template-rows: repeat(2, 20px) 339px repeat(2, 20px);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+/* Первые дети */
+
+.firstSonOfFatherOne {
+  grid-area: 1 / 1 / 2 / 2;
+  background-color: #FF4053;
+}
+
+.secondSonOfFatherOne {
+  grid-area: 5 / 1 / 6 / 2;
+  background-color: #FF4053;
+}
+
+.thirdSonOfFatherOne {
+  grid-area: 5 / 5 / 6 / 6;
+  background-color: #FF4053;
+}
+
+.fouthSonOfFatherOne {
+  grid-area: 1 / 5 / 2 / 6;
+  background-color: #FF4053;
+}
+
+.fifthSonOfFatherOne {
+  grid-area: 1 / 3 / 2 / 4;
+  background-color: #FF4053;
+}
+
+.sixthSonOfFatherOne {
+  grid-area: 3 / 1 / 4 / 2;
+  background-color: #FF4053;
+}
+
+.seventhSonOfFatherOne {
+  grid-area: 3 / 5 / 4 / 6;
+  background-color: #FF4053;
+}
+
+.eighthSonOfFatherOne {
+  grid-area: 5 / 3 / 6 / 4;
+  background-color: #FF4053;
+}
+
+.ninthSonOfFatherOne {
+  grid-area: 2 / 2 / 5 / 5;
+  background-color: #FF4053;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Вторые дети */
+
+.firstSonOfFatherTwo {
+  grid-area: 1 / 1 / 2 / 2;
+  background-color: #965EEB;
+}
+
+.secondSonOfFatherTwo {
+  grid-area: 5 / 1 / 6 / 2;
+  background-color: #965EEB;
+}
+
+.thirdSonOfFatherTwo {
+  grid-area: 5 / 5 / 6 / 6;
+  background-color: #965EEB;
+}
+
+.fouthSonOfFatherTwo {
+  grid-area: 1 / 5 / 2 / 6;
+  background-color: #965EEB;
+}
+
+.fifthSonOfFatherTwo {
+  grid-area: 1 / 3 / 2 / 4;
+  background-color: #965EEB;
+}
+
+.sixthSonOfFatherTwo {
+  grid-area: 3 / 1 / 4 / 2;
+  background-color: #965EEB;
+}
+
+.seventhSonOfFatherTwo {
+  grid-area: 3 / 5 / 4 / 6;
+  background-color: #965EEB;
+}
+
+.eighthSonOfFatherTwo {
+  grid-area: 5 / 3 / 6 / 4;
+  background-color: #965EEB;
+}
+
+.ninthSonOfFatherTwo {
+  grid-area: 2 / 2 / 5 / 5;
+  background-color: #965EEB;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Третьи дети */
+
+.firstSonOfFatherThree {
+  grid-area: 1 / 1 / 2 / 2;
+  background-color: #04E061;
+}
+
+.secondSonOfFatherThree {
+  grid-area: 5 / 1 / 6 / 2;
+  background-color: #04E061;
+}
+
+.thirdSonOfFatherThree {
+  grid-area: 5 / 5 / 6 / 6;
+  background-color: #04E061;
+}
+
+.fouthSonOfFatherThree {
+  grid-area: 1 / 5 / 2 / 6;
+  background-color: #04E061;
+}
+
+.fifthSonOfFatherThree {
+  grid-area: 1 / 3 / 2 / 4;
+  background-color: #04E061;
+}
+
+.sixthSonOfFatherThree {
+  grid-area: 3 / 1 / 4 / 2;
+  background-color: #04E061;
+}
+
+.seventhSonOfFatherThree {
+  grid-area: 3 / 5 / 4 / 6;
+  background-color: #04E061;
+}
+
+.eighthSonOfFatherThree {
+  grid-area: 5 / 3 / 6 / 4;
+  background-color: #04E061;
+}
+
+.ninthSonOfFatherThree {
+  grid-area: 2 / 2 / 5 / 5;
+  background-color: #04E061;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.textSale {
+  font-family: "Aeroport";
+  font-size: 26px;
+  text-align: center;
+  color: #fff;
+  margin: 30px 0 0 20px;
+}
+
+.textSubscribe {
+  font-family: "Aeroport";
+  font-size: 26px;
+  text-align: center;
+  color: #fff;
+  margin: 30px 0 0 20px;
+}
+
+.textPromocode {
+  font-family: "Aeroport";
+  font-size: 26px;
+  text-align: center;
+}
+
+.xBox {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.musicService {
+  text-align: center;
+  display: flex;
+}
+
+.avito {
+  text-align: center;
+  display: flex;
+}
+
+.car {
+  margin-top: 10px;
+}
+
+.redRockOne {
+  width: 34px;
+  height: 39px;
+  position: fixed;
+  left: 100px;
+  top: 81px;
+}
+
+.redRockTwo {
+  width: 25px;
+  height: 28px;
+  position: fixed;
+  left: 100px;
+  top: 500px;
+  rotate: -10deg;
+}
+
+.redRockThree {
+  width: 30px;
+  height: 34px;
+  position: fixed;
+  left: 500px;
+  top: 750px;
+  rotate: -50deg;
+}
+
+.redRockFour {
+  width: 30px;
+  height: 34px;
+  position: fixed;
+  left: 950px;
+  top: 200px;
+  rotate: 60deg;
+}
+
+.redRockFive {
+  width: 61px;
+  height: 69px;
+  position: fixed;
+  left: 1000px;
+  top: 500px;
+  rotate: 60deg;
+}
+
+.violetRockOne {
+  width: 84px;
+  height: 132px;
+  position: fixed;
+  left: 1000px;
+  top: 100px;
+  rotate: 10deg;
+}
+
+.violetRockTwo {
+  width: 63px;
+  height: 99px;
+  position: fixed;
+  left: 800px;
+  top: 550px;
+  rotate: 60deg;
+}
+
+.violetRockThree {
+  width: 63px;
+  height: 99px;
+  position: fixed;
+  left: 200px;
+  top: 100px;
+  rotate: 60deg;
+}
+
+.greenRockOne {
+  width: 72px;
+  height: 133px;
+  position: fixed;
+  left: 200px;
+  top: 500px;
+  rotate: 60deg;
+}
+
+.greenRockTwo {
+  width: 72px;
+  height: 133px;
+  position: fixed;
+  left: 1100px;
+  top: 50px;
+  rotate: 60deg;
+}
+
+.blueRockOne {
+  width: 72px;
+  height: 133px;
+  position: fixed;
+  left: 100px;
+  top: 300px;
+  rotate: -30deg;
+}
+
+.blueRockTwo {
+  width: 89px;
+  height: 158px;
+  position: fixed;
+  left: 1200px;
+  top: 500px;
+  rotate: -30deg;
+}
